@@ -10,9 +10,6 @@ public class Menu {
 
     private Undo commands = Undo.getInstance();
 
-    public Menu() {
-    }
-
     public void start() {
         int option = 0;
         String command = "";
