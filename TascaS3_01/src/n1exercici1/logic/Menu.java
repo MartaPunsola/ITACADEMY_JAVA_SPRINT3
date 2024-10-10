@@ -1,8 +1,8 @@
 package logic;
 
-import Exceptions.CommandNotFoundException;
-import Exceptions.CommandsEmptyException;
-import Exceptions.DuplicatedCommandException;
+import exceptions.CommandNotFoundException;
+import exceptions.CommandsEmptyException;
+import exceptions.DuplicatedCommandException;
 import classes.Undo;
 import utils.Input;
 

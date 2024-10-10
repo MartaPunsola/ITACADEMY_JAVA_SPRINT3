@@ -1,8 +1,8 @@
 package classes;
 
-import Exceptions.CommandNotFoundException;
-import Exceptions.CommandsEmptyException;
-import Exceptions.DuplicatedCommandException;
+import exceptions.CommandNotFoundException;
+import exceptions.CommandsEmptyException;
+import exceptions.DuplicatedCommandException;
 
 import java.util.ArrayList;
 

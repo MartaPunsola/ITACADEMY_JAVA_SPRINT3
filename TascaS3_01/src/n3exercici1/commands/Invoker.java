@@ -15,4 +15,5 @@ public class Invoker {
         this.commands.forEach(c -> c.execute());
         this.commands.clear();
     }
+
 }

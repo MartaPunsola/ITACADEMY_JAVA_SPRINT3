@@ -1,15 +1,18 @@
 package factory;
 
+import enums.Continent;
+
 public class ContactListProducer {
 
-    public static ContactListFactory getFactory(String continent) {
-        if(continent.equalsIgnoreCase("AMERICA")) {
+    public static ContactListFactory getFactory(Continent continent) throws IllegalArgumentException {
+        if(continent.equals(Continent.AMERICA)) {
             return new AmericaContactListFactory();
-        } else if (continent.equalsIgnoreCase("EUROPE")) {
+        } else if (continent.equals(Continent.EUROPE)) {
             return new EuropeContactListFactory();
-        } else if (continent.equalsIgnoreCase("ASIA")) {
+        } else if (continent.equals(Continent.ASIA)) {
             return new AsiaContactListFactory();
+        } else {
+            throw new IllegalArgumentException("This is not a valid continent.");
         }
-        return null;
     }
 }
