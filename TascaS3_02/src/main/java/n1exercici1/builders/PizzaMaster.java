@@ -5,28 +5,28 @@ import n1exercici1.enums.Size;
 
 public class PizzaMaster {
 
-    public void constructMarguerita(PizzaBuilder pizzaBuilder) {
-        pizzaBuilder.setPizzaSize(Size.SMALL);
-        pizzaBuilder.setPizzaDough(DoughType.WHITE);
-        pizzaBuilder.setPizzaToppings("tomato");
-        pizzaBuilder.setPizzaToppings("mozzarella");
+    public void constructMarguerita(MargueritaBuilder margueritaBuilder) {
+        margueritaBuilder.setPizzaSize(Size.SMALL);
+        margueritaBuilder.setPizzaDough(DoughType.WHITE);
+        margueritaBuilder.setPizzaToppings("tomato");
+        margueritaBuilder.setPizzaToppings("mozzarella");
     }
 
-    public void constructCapricciosa(PizzaBuilder pizzaBuilder) {
-        pizzaBuilder.setPizzaSize(Size.LARGE);
-        pizzaBuilder.setPizzaDough(DoughType.GLUTENFREE);
-        pizzaBuilder.setPizzaToppings("ham");
-        pizzaBuilder.setPizzaToppings("mushrooms");
-        pizzaBuilder.setPizzaToppings("olives");
-        pizzaBuilder.setPizzaToppings("mozzarella");
+    public void constructCapricciosa(CapricciosaBuilder capricciosaBuilder) {
+        capricciosaBuilder.setPizzaSize(Size.LARGE);
+        capricciosaBuilder.setPizzaDough(DoughType.GLUTENFREE);
+        capricciosaBuilder.setPizzaToppings("ham");
+        capricciosaBuilder.setPizzaToppings("mushrooms");
+        capricciosaBuilder.setPizzaToppings("olives");
+        capricciosaBuilder.setPizzaToppings("mozzarella");
     }
 
-    public void constructVeggie(PizzaBuilder pizzaBuilder) {
-        pizzaBuilder.setPizzaSize(Size.MEDIUM);
-        pizzaBuilder.setPizzaDough(DoughType.WHOLEWEAT);
-        pizzaBuilder.setPizzaToppings("eggplant");
-        pizzaBuilder.setPizzaToppings("pepper");
-        pizzaBuilder.setPizzaToppings("zucchini");
-        pizzaBuilder.setPizzaToppings("mozzarella");
+    public void constructVeggie(VeggieBuilder veggieBuilder) {
+        veggieBuilder.setPizzaSize(Size.MEDIUM);
+        veggieBuilder.setPizzaDough(DoughType.WHOLEWEAT);
+        veggieBuilder.setPizzaToppings("eggplant");
+        veggieBuilder.setPizzaToppings("pepper");
+        veggieBuilder.setPizzaToppings("zucchini");
+        veggieBuilder.setPizzaToppings("mozzarella");
     }
 }
